@@ -1,0 +1,87 @@
+body {
+            margin: 0;
+            padding: 0;
+
+            width: 300px;
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            background-color: #000000;
+        }
+
+        #welcome {
+        	  position: absolute;
+ 			left: 50;
+  			top: 20px;
+  			 
+  			text-align: center;
+
+        }
+
+        #my_sign_in {
+           
+            position: absolute;
+ 			
+  			left: 50%;
+  			top: 50%;
+
+            transition-duration: 0.3s;
+
+            cursor: pointer;
+        }
+
+        .sign_in_no_hover {
+            transform: translate(-50%, -50%);
+            width: 55%;
+            height: 10%;
+            border-radius: 5px;
+
+            color: ghostwhite;
+            background-color: #ff0000;
+
+            font-size: 2em;
+        }
+
+        .sign_in_hover {
+            background-color: black;
+            color: white;
+            transform: translate(-50%, -50%) scale(1.3);
+            font-size: 3em;
+            font-weight: bold;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 5px white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        #my_span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+
+            text-align: center;
+            z-index: 50;
+
+            pointer-events: none;
+        }
+
+        #wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 55%;
+            height: 15%;
+
+            cursor: pointer;
+            z-index: 1000;
+        }

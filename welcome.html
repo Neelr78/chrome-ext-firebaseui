@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Meet Attendance downloader</title>
+    
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+<button style="padding: .375rem .75rem; border: none" class="close" aria-label="Close" id="close">
+    <span aria-hidden="true">&times;</span>
+</button>
+    <h2 class>Meet Attendance Collector</h2>
+    <p class>Chrome Extension to collect meet attendance
+
+        <button id="options" class="btn btn-link d-inline">Add or Change Aliases</button>
+        <a href="https://sites.google.com/view/meet-attendance-collector/" target="_blank"
+           class="btn btn-link d-inline">Show Usage
+            guide</a>
+    </p>
+
+
+    <h4>Single Time Attendance: </h4>
+
+    <p>Record and download attendance at this moment.</p>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <p style="margin-bottom: .25rem;">Members : <span id="counter">0</span></p>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button id="refresh" class="btn btn-link" role="button">Rescan</button>
+            <button id="download" class="btn btn-link">Rescan + Download</button>
+            <button id="clear" class="btn btn-link">Clear</button>
+        </div>
+    </div>
+
+
+    <h4>Time-wise Attendance Recording :</h4>
+    <p>Attendance at different times (NOT AUTOMATIC) </p>
+    <div class="btn-group" id="live_mon_lay">
+        <button id="take_record_mon_btn" class="btn btn-link">New Record now</button>
+        <a href="../monitor/monitor.html"
+           target="_blank"
+           class="btn btn-link"
+           role="button">Show monitor
+        </a>
+        <a href="../monitor/monitor.html"
+           target="_blank"
+           id="stop_record_mon_btn"
+           class="btn btn-link"
+           role="button">Stop monitoring
+        </a>
+
+        <div class="d-block">
+            <p>Click <code>New Record now</code> to add attendance record. </p>
+        </div>
+    </div>
+
+    <div class="btn-group" id="start_mon_lay">
+        <button id="start_mon_btn" class="btn btn-link">Start Monitoring</button>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated"
+             id="progress_bar"
+             role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+             style="width: 100%; display: none"></div>
+    </div>
+    <div class="text-center m-0">
+
+
+
+
+    </div>
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
